@@ -16,7 +16,7 @@
 
 
 # How to run?
-### STEPS:
+#### STEPS:
 
 Clone the repository
 
