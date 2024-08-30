@@ -1,7 +1,7 @@
 # End-to-end-Machine-Learning-Project-with-MLflow
 
 
-## Workflows
+### Workflows
 
 1. Update config.yaml
 2. Update schema.yaml
@@ -16,7 +16,7 @@
 
 
 # How to run?
-### STEPS:
+#### STEPS:
 
 Clone the repository
 
