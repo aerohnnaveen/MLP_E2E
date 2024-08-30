@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlpe2e-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mlpe2e
+  template:
+    metadata:
+      labels:
+        app: mlpe2e
+    spec:
+      containers:
+      - name: mlpe2e_container
+        image: naveenhn1987/mlpe2e:latest
+        ports:
+        - containerPort: 9090
