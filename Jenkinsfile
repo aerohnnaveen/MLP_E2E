@@ -2,7 +2,7 @@ pipeline {
     agent {
         // Use Docker to ensure a consistent build environment
         docker {
-            image 'python:3.9' // Or any other relevant base image
+            image 'python:3.8-slim-buster' // Or any other relevant base image
             args '-v $HOME/.cache/pip:/root/.cache/pip' // Cache pip dependencies between builds
         }
     }
