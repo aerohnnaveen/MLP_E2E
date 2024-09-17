@@ -19,6 +19,15 @@ pipeline {
     }
 
     stages {
+        stage('Install Docker') {
+            steps {
+                sh '''
+                apt-get update
+                apt-get install -y docker.io
+                '''
+            }
+        }
+
         stage('Clone Repository') {
             steps {
                 git branch: 'main', url: 'https://github.com/aerohnnaveen/MLP_E2E.git'
